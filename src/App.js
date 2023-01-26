@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { AnimatePresence } from "framer-motion";
+import React from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+import { About } from "./pages/About";
+import { Contact } from "./pages/Contact";
+import { Home } from "./pages/Home";
+import { NotFound } from "./pages/NotFound";
+import { Projects } from "./pages/Projects";
+import { Skills } from "./pages/Skills";
+import { RootLayout } from "./RootLayout";
 
-function App() {
+export default function App() {
+  const location = useLocation();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RootLayout />
+      <AnimatePresence mode="wait">
+        <Routes key={location.pathname} location={location}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </AnimatePresence>
     </div>
   );
 }
-
-export default App;
