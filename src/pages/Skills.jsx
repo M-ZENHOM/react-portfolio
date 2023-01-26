@@ -94,8 +94,9 @@ const Iconbox = styled(motion.a)`
     }
   }
   @media (max-width: 640px) {
-    width: 120px;
-    height: 80px;
+    width: 110px;
+    height: 90px;
+    border-radius: 20px;
     img {
       width: 30px;
     }
