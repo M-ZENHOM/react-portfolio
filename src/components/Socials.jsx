@@ -5,7 +5,7 @@ import {
   SocialBtns,
   SocialIcons,
 } from "../StyledComponents/SocialBtns";
-import { FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 export const Socials = () => {
   return (
