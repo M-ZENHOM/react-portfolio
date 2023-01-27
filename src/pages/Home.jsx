@@ -55,7 +55,7 @@ const Intro = styled.div`
   @media (max-width: 747px) {
     font-size: 20px;
     order: 2;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     align-items: center;
     p {
       text-align: center;

@@ -80,7 +80,7 @@ const Iconbox = styled(motion.a)`
   transition: 0.5s;
   img {
     width: 80px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   svg {
@@ -94,14 +94,14 @@ const Iconbox = styled(motion.a)`
     }
   }
   @media (max-width: 640px) {
-    width: 110px;
-    height: 90px;
-    border-radius: 20px;
+    width: 105px;
+    height: 70px;
+    border-radius: 10px;
     img {
-      width: 30px;
+      width: 40px;
     }
     svg {
-      font-size: 40px;
+      font-size: 30px;
     }
 
     transition: 0.5s;
@@ -188,7 +188,7 @@ export const Skills = () => {
           </Icon>
           <Icon dealy="0.4" color="#bd3f9e" Itemcolor="#fff">
             <img src={styeldIcon} alt="tailwindIcon" />
-            Styled Comp
+            StyledComp
           </Icon>
         </IconWrapper>
       </Wrapper>
