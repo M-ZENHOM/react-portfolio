@@ -90,7 +90,6 @@ const Link = styled.a`
     }
     top: 0;
     left: 0;
-    transitions: 0.5s;
     z-index: -1;
     transition: 0.7s;
   }
