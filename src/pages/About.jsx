@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ParticlesComponent from "../SubComponents/ParticleComponent";
 
 const Container = styled(m.section)`
-  postion: absolute;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -89,7 +89,7 @@ export const About = () => {
       transition={{ duration: 0.5 }}
     >
       <Box>
-        <ParticlesComponent />
+        {/* <ParticlesComponent /> */}
         <Point>
           I'm a Front end developer based out of Egypt, I love combining the
           worlds of logic and creative design to make eye-catching, accessible,

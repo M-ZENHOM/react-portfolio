@@ -5,7 +5,7 @@ import { FiMail, FiInstagram, FiTwitter } from "react-icons/fi";
 import { GrLinkedinOption } from "react-icons/gr";
 
 const Container = styled(motion.section)`
-  postion: absolute;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;

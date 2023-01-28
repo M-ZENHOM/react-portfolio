@@ -14,7 +14,7 @@ import {
 } from "react-icons/fa";
 
 const Container = styled(motion.section)`
-  postion: absolute;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;

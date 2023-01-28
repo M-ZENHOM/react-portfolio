@@ -7,7 +7,7 @@ import pattern from "../assets/images/patternW.png";
 import { Typewriter } from "react-simple-typewriter";
 
 const Container = styled(m.section)`
-  postion: absolute;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
