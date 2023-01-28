@@ -1,13 +1,13 @@
 import imgOne from "../assets/images/ProjectsImgs/ProjectOne.png";
+import TodoImg from "../assets/images/ProjectsImgs/TodosApp.png";
 
 export const ProData = [
   {
     id: 1,
-    name: "Weather App",
-    tech: "React JS / Styled-Components",
-    description:
-      "This is a weather app with a search bar his is a weather app with a search barhis is a weather app with a search bar",
-    img: imgOne,
+    name: "To-Do List App",
+    tech: "React JS / Styled-Components / Redux/Toolkit /React-Bootstrap",
+    description: "A to-do list app",
+    img: TodoImg,
     code: "#",
     demo: "#",
   },
