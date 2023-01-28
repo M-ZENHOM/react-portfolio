@@ -16,6 +16,9 @@ const ParticlesComponent = () => {
   const particlesInit = async (main) => {
     await loadFull(main);
   };
+  const particlesLoaded = (Container) => {
+    console.log(Container);
+  };
 
   return (
     <Box>
@@ -23,6 +26,7 @@ const ParticlesComponent = () => {
         id="tsparticles"
         style={{ position: "absolute", top: 0 }}
         params={JsonConfig}
+        loaded={particlesLoaded}
         init={particlesInit}
       />
     </Box>

@@ -89,7 +89,7 @@ export const About = () => {
       transition={{ duration: 0.5 }}
     >
       <Box>
-        {/* <ParticlesComponent /> */}
+        <ParticlesComponent />
         <Point>
           I'm a Front end developer based out of Egypt, I love combining the
           worlds of logic and creative design to make eye-catching, accessible,
