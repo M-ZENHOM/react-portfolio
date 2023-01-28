@@ -10,7 +10,7 @@ import { ProData } from "../SubComponents/Data";
 import Card from "../components/Card";
 
 const Container = styled(m.section)`
-  postion: absolute;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;

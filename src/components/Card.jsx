@@ -47,9 +47,9 @@ const Footer = styled.footer`
   margin-left: 10px;
 `;
 const ImgHolder = styled.img`
-  width: 600px;
+  width: 900px;
   @media (max-width: 640px) {
-    width: 350px;
+    width: 400px;
   }
 `;
 

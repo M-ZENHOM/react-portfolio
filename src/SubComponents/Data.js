@@ -1,5 +1,4 @@
-import imgOne from "../assets/images/ProjectsImgs/ProjectOne.png";
-import TodoImg from "../assets/images/ProjectsImgs/TodosApp.png";
+import TodoImg from "../assets/images/ProjectsImgs/TodoList.png";
 
 export const ProData = [
   {
@@ -16,7 +15,7 @@ export const ProData = [
     name: "Weather App 2",
     tech: "React JS / Styled-Components",
     description: "This is a weather app with a search bar",
-    img: imgOne,
+    img: TodoImg,
     code: "#",
     demo: "#",
   },
@@ -25,7 +24,7 @@ export const ProData = [
     name: "Weather App 3",
     tech: "React JS / Styled-Components",
     description: "This is a weather app with a search bar",
-    img: imgOne,
+    img: TodoImg,
     code: "#",
     demo: "#",
   },
@@ -34,7 +33,7 @@ export const ProData = [
     name: "Weather App 4",
     tech: "React JS / Styled-Components",
     description: "This is a weather app with a search bar",
-    img: imgOne,
+    img: TodoImg,
     code: "#",
     demo: "#",
   },
