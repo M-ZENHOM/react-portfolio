@@ -29,10 +29,14 @@ const Title = styled.h2`
     position: absolute;
     top: 110%;
     left: 50%;
-    width: 300px;
+    width: 200px;
     transform: translateX(-50%);
     height: 2px;
     background-color: ${({ theme }) => theme.colors.white};
+  }
+
+  @media (max-width: 640px) {
+    font-size: 30px;
   }
 `;
 const Desciption = styled.p`
@@ -43,6 +47,7 @@ const Desciption = styled.p`
   @media (max-width: 640px) {
     & {
       width: 300px;
+      font-size: 16px;
     }
   }
 `;
@@ -72,6 +77,13 @@ const Iconbox = styled(motion.a)`
   &:hover {
     background-color: ${({ theme }) => theme.colors.black};
     transition: 0.5s;
+  }
+  @media (max-width: 640px) {
+    width: 120px;
+    height: 90px;
+    svg {
+      font-size: 60px;
+    }
   }
 `;
 

@@ -15,8 +15,7 @@ body {
   background-color: ${({ theme }) => theme.colors.Main};
   font-family: ${({ theme }) => theme.fonts.MainFont};
   overflow:hidden;
-  width:100vw;
-  height: 100vh;
+ 
 }
 
 #dark{

@@ -38,7 +38,7 @@ const Title = styled.h2`
     position: absolute;
     top: 110%;
     left: 50%;
-    width: 300px;
+    width: 200px;
     transform: translateX(-50%);
     height: 2px;
     background-color: ${({ theme }) => theme.colors.white};
@@ -51,7 +51,8 @@ const Desciption = styled.p`
   text-align: center;
   @media (max-width: 640px) {
     & {
-      width: 300px;
+      width: 320px;
+      font-size: 16px;
     }
   }
 `;
@@ -75,7 +76,7 @@ const Iconbox = styled(motion.a)`
   height: 139px;
   text-transform: uppercase;
   background-color: ${(props) => props.color};
-  color: ${(props) => props.Itemcolor};
+  color: #fff;
   border-radius: 30px;
   transition: 0.5s;
   img {
@@ -154,27 +155,27 @@ export const Skills = () => {
           for your web and mobile applications
         </Desciption>
         <IconWrapper>
-          <Icon dealy="0.1" color="#1e88e5" Itemcolor="#fff">
+          <Icon dealy="0.1" color="#1e88e5">
             <FaReact />
             Reactjs
           </Icon>
-          <Icon dealy="0.2" color="#cc6699" Itemcolor="#fff">
+          <Icon dealy="0.2" color="#cc6699">
             <FaSass />
             SASS
           </Icon>
-          <Icon dealy="0.3" color="#ffdf00" Itemcolor="#000">
+          <Icon dealy="0.3" color="#f39304">
             <FaJsSquare />
             JS
           </Icon>
-          <Icon dealy="0.4" color="#e56027" Itemcolor="#fff">
+          <Icon dealy="0.4" color="#e56027">
             <FaHtml5 />
             html5
           </Icon>
-          <Icon dealy="0.4" color="#5e3b7f" Itemcolor="#fff">
+          <Icon dealy="0.4" color="#5e3b7f">
             <FaBootstrap />
             bootstrap
           </Icon>
-          <Icon dealy="0.4" color="#f15233" Itemcolor="#fff">
+          <Icon dealy="0.4" color="#f15233">
             <FaGitAlt />
             git
           </Icon>
@@ -182,11 +183,11 @@ export const Skills = () => {
             <img src={photoshopIcon} alt="photoshopIcon" />
             photoshop
           </Icon> */}
-          <Icon dealy="0.4" color="#333745" Itemcolor="#fff">
+          <Icon dealy="0.4" color="#333745">
             <img src={tailWindIcon} alt="tailwindIcon" />
             tailwind
           </Icon>
-          <Icon dealy="0.4" color="#bd3f9e" Itemcolor="#fff">
+          <Icon dealy="0.4" color="#bd3f9e">
             <img src={styeldIcon} alt="tailwindIcon" />
             StyledComp
           </Icon>

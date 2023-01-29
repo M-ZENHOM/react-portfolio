@@ -55,10 +55,14 @@ const Intro = styled.div`
   @media (max-width: 747px) {
     font-size: 20px;
     order: 2;
-    padding-bottom: 150px;
+    padding-bottom: 200px;
     align-items: center;
+    img {
+      width: 200px;
+    }
     p {
       text-align: center;
+      font-size: 16px;
     }
   }
 `;
@@ -72,7 +76,7 @@ const MyImage = styled.img`
   }
   @media (max-width: 640px) {
     & {
-      padding-top: 100px;
+      padding-top: 50px;
     }
   }
 `;
