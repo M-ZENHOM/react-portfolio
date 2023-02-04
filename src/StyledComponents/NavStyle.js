@@ -2,40 +2,30 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { ResponsiveContainer } from "../components/ResponsiveContainer";
 
 const NavContainer = styled.nav`
-  width: clamp(50%, 700px, 90%);
+  width: clamp(20%, 1200px, 85%);
   border-radius: 6px;
   position: fixed;
   bottom: 20px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-53%);
   display: flex;
   justify-content: space-around;
   align-items: center;
   z-index: 1;
-  @media (max-width: 1000px) {
-    & {
-      width: calc(100% - 40px);
-    }
-  }
+  margin: 0 auto;
 `;
 
 const MainNavStyle = styled(NavLink)`
   color: ${({ theme }) => theme.colors.white};
-  #light & {
-    color: ${({ theme }) => theme.colors.lightTwo};
-  }
   &.active {
     h2 {
-      border-bottom: 2px solid ${({ theme }) => theme.colors.white};
-      #light & {
-        border-bottom: 2px solid ${({ theme }) => theme.colors.lightTwo};
-      }
+      border-top: 2px solid ${({ theme }) => theme.colors.white};
     }
   }
 `;
-
 const MobileContainer = styled(motion.ul)`
   width: clamp(50%, 700px, 90%);
   border-radius: 6px;
@@ -49,23 +39,13 @@ const MobileContainer = styled(motion.ul)`
   z-index: 1;
   height: 6vh;
   background-color: #778da938;
-  #light & {
-    background-color: ${({ theme }) => theme.colors.lightTwo};
-  }
   a {
     font-size: 30px;
     line-height: 20px;
     color: ${({ theme }) => theme.colors.white};
-
     &.active {
       color: ${({ theme }) => theme.colors.white};
       border-bottom: 2px solid ${({ theme }) => theme.colors.white};
-    }
-  }
-
-  @media (max-width: 1000px) {
-    & {
-      width: calc(100% - 40px);
     }
   }
 `;
@@ -82,33 +62,9 @@ const HeadingMotion = styled(motion.h2)`
     z-index: 999;
   }
 `;
-const Container = styled.div`
-  margin: 0 auto;
-  padding: 0 15px;
-  @media (min-width: 768px) {
-    & {
-      width: 750px;
-    }
-  }
-  @media (min-width: 992px) {
-    & {
-      width: 970px;
-    }
-  }
-  @media (min-width: 1200px) {
-    & {
-      width: 1170px;
-    }
-  }
-  @media (min-width: 1700px) {
-    & {
-      width: 1600px;
-    }
-  }
-`;
 
 export const MainContainer = (props) => {
-  return <Container {...props}>{props.children}</Container>;
+  return <ResponsiveContainer {...props}>{props.children}</ResponsiveContainer>;
 };
 export const MobileNavbar = (props) => {
   return (

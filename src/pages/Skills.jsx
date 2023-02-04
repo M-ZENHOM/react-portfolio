@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
-// import photoshopIcon from "../assets/images/photoshop.png";
+import photoshopIcon from "../assets/images/photoshop.png";
 import tailWindIcon from "../assets/SVG/tailwind-css.svg";
 import styeldIcon from "../assets/SVG/styled-components.svg";
 import {
@@ -11,22 +11,21 @@ import {
   FaHtml5,
   FaGitAlt,
   FaBootstrap,
+  FaCss3Alt,
 } from "react-icons/fa";
+import { SiRedux } from "react-icons/si";
 
-const Container = styled(motion.section)`
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
+import { ResponsiveContainer } from "../components/ResponsiveContainer";
+
+const Section = styled(motion.section)`
   height: 100vh;
-`;
-const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  overflow: hidden;
 `;
+
 const Title = styled.h2`
   position: relative;
   color: ${({ theme }) => theme.colors.white};
@@ -58,7 +57,7 @@ const Desciption = styled.p`
 `;
 
 const IconWrapper = styled.div`
-  max-width: 800px;
+  max-width: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,7 +82,6 @@ const Iconbox = styled(motion.a)`
     width: 80px;
     margin-bottom: 5px;
   }
-
   svg {
     font-size: 90px;
   }
@@ -91,12 +89,12 @@ const Iconbox = styled(motion.a)`
     svg,
     img {
       transform: rotateZ(360deg);
-      transition: 0.5s;
+      transition: 0.9s;
     }
   }
   @media (max-width: 640px) {
     width: 105px;
-    height: 70px;
+    height: 78px;
     border-radius: 10px;
     img {
       width: 40px;
@@ -104,7 +102,6 @@ const Iconbox = styled(motion.a)`
     svg {
       font-size: 30px;
     }
-
     transition: 0.5s;
   }
 `;
@@ -138,17 +135,17 @@ const Icon = (props) => {
 
 export const Skills = () => {
   return (
-    <Container
-      initial={{
-        x: "-100%",
-      }}
-      animate={{ x: "0%" }}
-      exit={{
-        x: "100%",
-      }}
-      transition={{ duration: 0.5 }}
-    >
-      <Wrapper>
+    <ResponsiveContainer>
+      <Section
+        initial={{
+          x: "-100%",
+        }}
+        animate={{ x: "0%" }}
+        exit={{
+          x: "180%",
+        }}
+        transition={{ duration: 0.5 }}
+      >
         <Title>WHAT I DO!</Title>
         <Desciption>
           Develop highly interactive and responsive Front end / User Interfaces
@@ -167,6 +164,10 @@ export const Skills = () => {
             <FaJsSquare />
             JS
           </Icon>
+          <Icon dealy="0.3" color="#7046b2">
+            <SiRedux />
+            Redux
+          </Icon>
           <Icon dealy="0.4" color="#e56027">
             <FaHtml5 />
             html5
@@ -179,20 +180,24 @@ export const Skills = () => {
             <FaGitAlt />
             git
           </Icon>
-          {/* <Icon dealy="0.4" color="#5438DC" Itemcolor="#fff">
+          <Icon dealy="0.4" color="#5438DC">
             <img src={photoshopIcon} alt="photoshopIcon" />
             photoshop
-          </Icon> */}
+          </Icon>
           <Icon dealy="0.4" color="#333745">
             <img src={tailWindIcon} alt="tailwindIcon" />
             tailwind
           </Icon>
           <Icon dealy="0.4" color="#bd3f9e">
             <img src={styeldIcon} alt="tailwindIcon" />
-            StyledComp
+            StyledCom
+          </Icon>
+          <Icon dealy="0.4" color="#254bdd">
+            <FaCss3Alt />
+            CSS3
           </Icon>
         </IconWrapper>
-      </Wrapper>
-    </Container>
+      </Section>
+    </ResponsiveContainer>
   );
 };

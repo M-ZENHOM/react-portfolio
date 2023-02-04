@@ -35,9 +35,7 @@ const Tags = styled.div`
   display: flex;
   flex-wrap: wrap;
   color: ${({ theme }) => theme.colors.text};
-  #light & {
-    color: ${({ theme }) => theme.colors.lightTwo};
-  }
+  width: 300px;
 `;
 const Footer = styled.footer`
   display: flex;
@@ -48,7 +46,10 @@ const Footer = styled.footer`
 `;
 const ImgHolder = styled.img`
   width: 900px;
-  @media (max-width: 640px) {
+  @media (max-width: 1024px) {
+    width: 550px;
+  }
+  @media (max-width: 425px) {
     width: 400px;
   }
 `;
@@ -60,6 +61,7 @@ const Details = styled.div`
   flex-direction: column;
   @media (max-width: 911px) {
     align-items: center;
+    margin-bottom: 80px;
   }
 `;
 
@@ -70,10 +72,6 @@ const Link = styled.a`
   align-items: center;
   color: ${({ theme }) => theme.colors.heading};
   border: 1px solid ${({ theme }) => theme.colors.heading};
-  #light & {
-    color: ${({ theme }) => theme.colors.lightTwo};
-    border: 1px solid ${({ theme }) => theme.colors.lightTwo};
-  }
   padding: 6px 16px;
   svg {
     margin-left: 8px;
@@ -85,9 +83,6 @@ const Link = styled.a`
     width: 0;
     height: 100%;
     background-color: ${({ theme }) => theme.colors.heading};
-    #light & {
-      background-color: ${({ theme }) => theme.colors.lightTwo};
-    }
     top: 0;
     left: 0;
     z-index: -1;
@@ -95,9 +90,6 @@ const Link = styled.a`
   }
   &:hover {
     color: ${({ theme }) => theme.colors.white};
-    #light & {
-      color: ${({ theme }) => theme.colors.white};
-    }
   }
   &:hover::before {
     width: 100%;

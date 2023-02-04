@@ -21,10 +21,8 @@ const Num = styled(motion.div)`
   color: white;
   font-size: 150px;
   height: 100%;
-  #light & {
-    color: ${({ theme }) => theme.colors.lightTwo};
-  }
-  @media (max-width: 640px) {
+  @media (max-width: 1100px) {
+    margin-left: ${(props) => props.margin};
   }
 `;
 const Text = styled(motion.h2)`
@@ -37,10 +35,8 @@ const Text = styled(motion.h2)`
   align-items: center;
   color: ${({ theme }) => theme.colors.heading};
   font-size: ${(props) => props.fontSize};
-  #light & {
-    color: ${({ theme }) => theme.colors.lightTwo};
-  }
   height: 100%;
+  width: auto;
 `;
 const NumContainer = (props) => {
   return <Num {...props}>{props.children}</Num>;
@@ -57,15 +53,19 @@ export const NotFound = () => {
         Oops!
       </Description>
       <NumContainer
-        left="45%"
+        left="50%"
         initial={{
           left: "-100%",
         }}
-        animate={{ left: "45%", transition: { type: "spring", duration: 1 } }}
+        animate={{
+          left: "42%",
+          transition: { type: "spring", duration: 1 },
+        }}
         exit={{
           left: "-100%",
         }}
         transition={{ duration: 0.75 }}
+        margin="-50px"
       >
         4
       </NumContainer>
@@ -83,15 +83,16 @@ export const NotFound = () => {
         0
       </NumContainer>
       <NumContainer
-        left="55%"
+        left="50%"
         initial={{
           left: "100%",
         }}
-        animate={{ left: "55%", transition: { type: "spring", duration: 1 } }}
+        animate={{ left: "58%", transition: { type: "spring", duration: 1 } }}
         exit={{
           left: "120%",
         }}
         transition={{ duration: 0.75 }}
+        margin="50px"
       >
         4
       </NumContainer>

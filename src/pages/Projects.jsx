@@ -45,9 +45,6 @@ const Wrapper = styled.div`
     }
     .swiper-pagination-bullet-active {
       background: ${({ theme }) => theme.colors.heading};
-      #light & {
-        background: ${({ theme }) => theme.colors.lightTwo};
-      }
     }
   }
 `;

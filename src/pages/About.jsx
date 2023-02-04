@@ -1,33 +1,21 @@
 import { motion as m } from "framer-motion";
 import styled from "styled-components";
+import { ResponsiveContainer } from "../components/ResponsiveContainer";
 import ParticlesComponent from "../SubComponents/ParticleComponent";
 
-const Container = styled(m.section)`
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
+const Section = styled(m.section)`
   height: 100vh;
-`;
-
-const Box = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
+  overflow: hidden;
 `;
 
 const Point = styled.li`
   position: relative;
   text-align: start;
   letter-spacing: 1px;
-  color: ${({ theme }) => theme.colors.white};
-  background-color: ${({ theme }) => theme.colors.text};
-  #light & {
-    background-color: ${({ theme }) => theme.colors.lightTwo};
-  }
   width: 800px;
   height: 150px;
   padding: 30px;
@@ -35,10 +23,9 @@ const Point = styled.li`
   z-index: 1;
   transition: 0.5s;
   margin-bottom: 10px;
+  color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.text};
   border: 3px solid ${({ theme }) => theme.colors.heading};
-  #light & {
-    border: 3px solid ${({ theme }) => theme.colors.lightThree};
-  }
   &::before {
     content: "";
     position: absolute;
@@ -47,9 +34,6 @@ const Point = styled.li`
     width: 5px;
     height: 50px;
     background-color: ${({ theme }) => theme.colors.heading};
-    #light & {
-      background-color: ${({ theme }) => theme.colors.lightThree};
-    }
     transform: translateY(-50%);
     z-index: -1;
   }
@@ -62,34 +46,33 @@ const Point = styled.li`
     width: 100%;
     height: 100%;
   }
-
-  @media (max-width: 768px) {
-    width: 700px;
-    height: 160px;
+  @media (max-width: 991px) {
+    width: auto;
+    height: 150px;
     padding: 15px;
+    font-size: 20px;
   }
-  @media (max-width: 640px) {
-    width: 370px;
-    height: 160px;
-    font-size: 16px;
+  @media (max-width: 768px) {
+    width: auto;
+    height: 180px;
     padding: 15px;
+    font-size: 17px;
   }
 `;
 
 export const About = () => {
   return (
-    <Container
-      initial={{
-        x: "-100%",
-      }}
-      animate={{ x: "0%" }}
-      exit={{
-        x: "100%",
-      }}
-      transition={{ duration: 0.5 }}
-    >
-      <Box>
-        <ParticlesComponent />
+    <ResponsiveContainer>
+      <Section
+        initial={{
+          x: "-100%",
+        }}
+        animate={{ x: "0%" }}
+        exit={{
+          x: "180%",
+        }}
+        transition={{ duration: 0.5 }}
+      >
         <Point>
           I'm a Front end developer based out of Egypt, I love combining the
           worlds of logic and creative design to make eye-catching, accessible,
@@ -104,7 +87,8 @@ export const About = () => {
           I'm excited to make the leap and continue refining my skills with the
           right company.
         </Point>
-      </Box>
-    </Container>
+      </Section>
+      <ParticlesComponent />
+    </ResponsiveContainer>
   );
 };

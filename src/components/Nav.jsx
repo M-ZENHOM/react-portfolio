@@ -8,8 +8,8 @@ import {
   MobileNavbar,
 } from "../StyledComponents/NavStyle";
 import {
-  BiHomeHeart,
-  BiStore,
+  BiHomeAlt,
+  BiBriefcaseAlt2,
   BiUserCircle,
   BiMailSend,
   BiCodeBlock,
@@ -54,7 +54,7 @@ export const MonileNav = () => {
   return (
     <MobileNavbar>
       <NavLink to="/">
-        <BiHomeHeart />
+        <BiHomeAlt />
       </NavLink>
       <NavLink to="about">
         <BiUserCircle />
@@ -63,7 +63,7 @@ export const MonileNav = () => {
         <BiCodeBlock />
       </NavLink>
       <NavLink to="projects">
-        <BiStore />
+        <BiBriefcaseAlt2 />
       </NavLink>
       <NavLink to="contact">
         <BiMailSend />

@@ -10,6 +10,7 @@ const Container = styled(motion.section)`
   top: 0;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 `;
 const Wrapper = styled.div`
   display: flex;

@@ -15,18 +15,6 @@ body {
   background-color: ${({ theme }) => theme.colors.Main};
   font-family: ${({ theme }) => theme.fonts.MainFont};
   overflow:hidden;
- 
-}
-
-#dark{
-  background-color: ${({ theme }) => theme.colors.Main};
-}
-#light{
-  background-color: ${({ theme }) => theme.colors.light};
-}
-
-#light p {
-  color:#000;
 }
 
 button,
@@ -42,6 +30,5 @@ li {
 a {
   text-decoration: none;
 }
-
 
 `;
