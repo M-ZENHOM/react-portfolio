@@ -19,16 +19,16 @@ export const RootLayout = () => {
     });
   };
   useEffect(() => {
-    Loaded();
+    // Loaded();
     Resize();
     return () => {
-      Loaded();
+      // Loaded();
       Resize();
     };
   }, []);
   return (
     <>
-      {isLoading && <Loader />}
+      {/* {isLoading && <Loader />} */}
       <GlobalStyle />
       <Socials />
       {screenWidth < 640 ? <MonileNav /> : <Nav />}
