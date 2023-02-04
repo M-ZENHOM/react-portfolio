@@ -10,6 +10,7 @@ const Section = styled(m.section)`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  margin-bottom: 50px;
 `;
 
 const Point = styled.li`
@@ -54,9 +55,8 @@ const Point = styled.li`
   }
   @media (max-width: 768px) {
     width: auto;
-    height: 180px;
     padding: 15px;
-    font-size: 17px;
+    font-size: 14px;
   }
 `;
 

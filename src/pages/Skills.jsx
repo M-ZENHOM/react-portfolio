@@ -93,14 +93,15 @@ const Iconbox = styled(motion.a)`
     }
   }
   @media (max-width: 640px) {
-    width: 105px;
-    height: 78px;
-    border-radius: 10px;
+    width: 65px;
+    height: 55px;
+    border-radius: 5px;
+    font-size: 14px;
     img {
       width: 40px;
     }
     svg {
-      font-size: 30px;
+      font-size: 25px;
     }
     transition: 0.5s;
   }
@@ -174,7 +175,7 @@ export const Skills = () => {
           </Icon>
           <Icon dealy="0.4" color="#5e3b7f">
             <FaBootstrap />
-            bootstrap
+            bootS
           </Icon>
           <Icon dealy="0.4" color="#f15233">
             <FaGitAlt />
@@ -182,7 +183,6 @@ export const Skills = () => {
           </Icon>
           <Icon dealy="0.4" color="#5438DC">
             <img src={photoshopIcon} alt="photoshopIcon" />
-            photoshop
           </Icon>
           <Icon dealy="0.4" color="#333745">
             <img src={tailWindIcon} alt="tailwindIcon" />
@@ -190,7 +190,7 @@ export const Skills = () => {
           </Icon>
           <Icon dealy="0.4" color="#bd3f9e">
             <img src={styeldIcon} alt="tailwindIcon" />
-            StyledCom
+            StyledC
           </Icon>
           <Icon dealy="0.4" color="#254bdd">
             <FaCss3Alt />

@@ -35,6 +35,9 @@ const Wrapper = styled.div`
     .swiper-pagination-bullet {
       width: 12px;
       height: 12px;
+      @media (max-width: 640px) {
+        margin-bottom: 50px;
+      }
     }
     .swiper-button-next,
     .swiper-button-prev {
