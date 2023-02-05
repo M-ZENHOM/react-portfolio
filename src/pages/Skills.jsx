@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
-import photoshopIcon from "../assets/images/photoshop.png";
+// import photoshopIcon from "../assets/images/photoshop.png";
 import tailWindIcon from "../assets/SVG/tailwind-css.svg";
 import styeldIcon from "../assets/SVG/styled-components.svg";
 import {
@@ -11,10 +11,8 @@ import {
   FaHtml5,
   FaGitAlt,
   FaBootstrap,
-  FaCss3Alt,
 } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
-
 import { ResponsiveContainer } from "../components/ResponsiveContainer";
 
 const Section = styled(motion.section)`
@@ -93,15 +91,15 @@ const Iconbox = styled(motion.a)`
     }
   }
   @media (max-width: 640px) {
-    width: 65px;
-    height: 55px;
+    width: 90px;
+    height: 70px;
     border-radius: 5px;
     font-size: 14px;
     img {
-      width: 40px;
+      width: 45px;
     }
     svg {
-      font-size: 25px;
+      font-size: 35px;
     }
     transition: 0.5s;
   }
@@ -175,27 +173,27 @@ export const Skills = () => {
           </Icon>
           <Icon dealy="0.4" color="#5e3b7f">
             <FaBootstrap />
-            bootS
+            bootstrap
           </Icon>
           <Icon dealy="0.4" color="#f15233">
             <FaGitAlt />
             git
           </Icon>
-          <Icon dealy="0.4" color="#5438DC">
+          {/* <Icon dealy="0.4" color="#5438DC">
             <img src={photoshopIcon} alt="photoshopIcon" />
-          </Icon>
+          </Icon> */}
           <Icon dealy="0.4" color="#333745">
             <img src={tailWindIcon} alt="tailwindIcon" />
             tailwind
           </Icon>
           <Icon dealy="0.4" color="#bd3f9e">
             <img src={styeldIcon} alt="tailwindIcon" />
-            StyledC
+            StyledComp
           </Icon>
-          <Icon dealy="0.4" color="#254bdd">
+          {/* <Icon dealy="0.4" color="#254bdd">
             <FaCss3Alt />
             CSS3
-          </Icon>
+          </Icon> */}
         </IconWrapper>
       </Section>
     </ResponsiveContainer>
