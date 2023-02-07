@@ -100,7 +100,7 @@ export const Home = () => {
           <ImgLogo src={myName} alt="Mahmoud M Zenhom" />
           <Typewriter
             words={[
-              "I'm a Front End Developer ReactJs passionate about creating interactive applications and experiences on the web.",
+              "A passionate Front End Developer 🚀 having an experience of building Web with JavaScript / Reactjs / Redux/toolkit and some other cool libraries and frameworks.",
             ]}
             typeSpeed={20}
           />
