@@ -36,6 +36,7 @@ const TextBox = styled.div`
     align-items: center;
     text-align: center;
     order: 2;
+    padding-bottom: 25px;
     span {
       font-size: 20px;
     }
