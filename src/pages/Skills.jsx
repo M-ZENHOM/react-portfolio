@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
-// import photoshopIcon from "../assets/images/photoshop.png";
+import photoshopIcon from "../assets/images/photoshop.png";
 import tailWindIcon from "../assets/SVG/tailwind-css.svg";
 import styeldIcon from "../assets/SVG/styled-components.svg";
 import {
@@ -13,15 +13,20 @@ import {
   FaBootstrap,
 } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
+import { FaCss3Alt } from "react-icons/fa";
 import { ResponsiveContainer } from "../components/ResponsiveContainer";
 
 const Section = styled(motion.section)`
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
+  min-height: 100vh;
+  height: fit-content;
+  padding-top: 150px;
+  padding-bottom: 150px;
 `;
 
 const Title = styled.h2`
@@ -91,15 +96,15 @@ const Iconbox = styled(motion.a)`
     }
   }
   @media (max-width: 640px) {
-    width: 90px;
-    height: 70px;
+    width: 95px;
+    height: 90px;
     border-radius: 5px;
     font-size: 14px;
     img {
-      width: 45px;
+      width: 50px;
     }
     svg {
-      font-size: 35px;
+      font-size: 40px;
     }
     transition: 0.5s;
   }
@@ -179,9 +184,10 @@ export const Skills = () => {
             <FaGitAlt />
             git
           </Icon>
-          {/* <Icon dealy="0.4" color="#5438DC">
+          <Icon dealy="0.4" color="#5438DC">
             <img src={photoshopIcon} alt="photoshopIcon" />
-          </Icon> */}
+            photoshop
+          </Icon>
           <Icon dealy="0.4" color="#333745">
             <img src={tailWindIcon} alt="tailwindIcon" />
             tailwind
@@ -190,10 +196,10 @@ export const Skills = () => {
             <img src={styeldIcon} alt="tailwindIcon" />
             StyledComp
           </Icon>
-          {/* <Icon dealy="0.4" color="#254bdd">
+          <Icon dealy="0.4" color="#254bdd">
             <FaCss3Alt />
             CSS3
-          </Icon> */}
+          </Icon>
         </IconWrapper>
       </Section>
     </ResponsiveContainer>

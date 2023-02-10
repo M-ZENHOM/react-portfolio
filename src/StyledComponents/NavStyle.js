@@ -22,7 +22,7 @@ const MainNavStyle = styled(NavLink)`
   color: ${({ theme }) => theme.colors.white};
   &.active {
     h2 {
-      border-top: 2px solid ${({ theme }) => theme.colors.white};
+      border-bottom: 2px solid ${({ theme }) => theme.colors.white};
     }
   }
 `;

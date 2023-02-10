@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 const SocialsContainer = styled.div`
-  position: fixed;
+  position: absolute;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);

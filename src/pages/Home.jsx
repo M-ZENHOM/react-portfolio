@@ -15,14 +15,15 @@ const Section = styled(motion.section)`
   align-content: center;
   flex-wrap: wrap;
   overflow: hidden;
+  padding-bottom: 15px;
 `;
 const TextBox = styled.div`
   display: flex;
   flex-direction: column;
   span {
     color: ${({ theme }) => theme.colors.heading};
-    font-size: 27px;
-    width: 550px;
+    font-size: 25px;
+    width: 500px;
     margin: 5px 0;
   }
   @media (max-width: 1200px) {
@@ -35,8 +36,11 @@ const TextBox = styled.div`
     align-items: center;
     text-align: center;
     order: 2;
+    span {
+      font-size: 20px;
+    }
   }
-  @media (max-width: 414px) {
+  @media (max-width: 450px) {
     span {
       width: auto;
       font-size: 18px;

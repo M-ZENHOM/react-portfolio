@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 import { Typewriter } from "react-simple-typewriter";
+import { useNavigate } from "react-router-dom";
 
 const Container = styled(motion.div)`
   position: relative;
@@ -26,6 +27,8 @@ const Num = styled(motion.div)`
   }
 `;
 const Text = styled(motion.h2)`
+  display: flex;
+  flex-direction: column;
   position: absolute;
   left: 50%;
   top: ${(props) => props.top};
@@ -38,6 +41,22 @@ const Text = styled(motion.h2)`
   height: 100%;
   width: auto;
 `;
+const Btn = styled.button`
+  padding: 10px 30px;
+  outline: none;
+  border: none;
+  background-color: ${({ theme }) => theme.colors.heading};
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-size: 19px;
+  cursor: pointer;
+  transition: 0.5s;
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.black};
+    transition: 0.5s;
+  }
+`;
 const NumContainer = (props) => {
   return <Num {...props}>{props.children}</Num>;
 };
@@ -47,6 +66,7 @@ const Description = (props) => {
 };
 
 export const NotFound = () => {
+  const navigate = useNavigate();
   return (
     <Container>
       <Description top="-200px" fontSize="50px">
@@ -101,6 +121,7 @@ export const NotFound = () => {
           words={["We can't find the page you 're lookin for."]}
           typeSpeed={20}
         />
+        <Btn onClick={() => navigate("/", { replace: true })}>GO TO HOME</Btn>
       </Description>
     </Container>
   );

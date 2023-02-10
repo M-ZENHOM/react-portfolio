@@ -14,7 +14,7 @@ html {
 body {
   background-color: ${({ theme }) => theme.colors.Main};
   font-family: ${({ theme }) => theme.fonts.MainFont};
-  overflow:hidden;
+  /* overflow:hidden; */
 }
 
 button,
