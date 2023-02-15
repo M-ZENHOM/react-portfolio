@@ -14,6 +14,10 @@ html {
 body {
   background-color: ${({ theme }) => theme.colors.Main};
   font-family: ${({ theme }) => theme.fonts.MainFont};
+  overflow: hidden;
+  @media screen and (max-width:768px) {
+    overflow: scroll;
+  }
 }
 
 button,
