@@ -26,8 +26,9 @@ const Description = styled.h2`
   font-weight: 500;
   width: 300px;
   color: ${({ theme }) => theme.colors.text};
-  #light & {
-    color: ${({ theme }) => theme.colors.lightTwo};
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    text-align: center;
   }
 `;
 const Tags = styled.div`
@@ -35,7 +36,12 @@ const Tags = styled.div`
   display: flex;
   flex-wrap: wrap;
   color: ${({ theme }) => theme.colors.text};
-  width: 300px;
+  width: 400px;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    text-align: center;
+    width: auto;
+  }
 `;
 const Footer = styled.footer`
   display: flex;

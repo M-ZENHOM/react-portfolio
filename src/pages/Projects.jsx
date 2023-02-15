@@ -21,6 +21,9 @@ const Container = styled(m.section)`
   top: 0;
   width: 100%;
   height: 100vh;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 50px;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -48,9 +51,6 @@ const Wrapper = styled.div`
     .swiper-button-next,
     .swiper-button-prev {
       color: ${({ theme }) => theme.colors.heading};
-      @media (max-width: 640px) {
-        margin: -80px -10px;
-      }
     }
     .swiper-pagination-bullet-active {
       background: ${({ theme }) => theme.colors.heading};

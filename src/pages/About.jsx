@@ -10,7 +10,6 @@ const Section = styled(m.section)`
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin-bottom: 50px;
 `;
 
 const Point = styled.li`

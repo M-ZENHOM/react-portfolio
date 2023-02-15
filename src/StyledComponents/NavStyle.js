@@ -20,10 +20,21 @@ const NavContainer = styled.nav`
 
 const MainNavStyle = styled(NavLink)`
   color: ${({ theme }) => theme.colors.white};
-  &.active {
-    h2 {
-      border-bottom: 2px solid ${({ theme }) => theme.colors.white};
+  h2 {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #fff;
+      transition: 0.5s;
     }
+  }
+  &.active h2::before {
+    width: 100%;
   }
 `;
 const MobileContainer = styled(motion.ul)`

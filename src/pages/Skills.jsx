@@ -17,16 +17,16 @@ import { FaCss3Alt } from "react-icons/fa";
 import { ResponsiveContainer } from "../components/ResponsiveContainer";
 
 const Section = styled(motion.section)`
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* overflow: hidden; */
   min-height: 100vh;
   height: fit-content;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  @media screen and (max-width: 768px) {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
 `;
 
 const Title = styled.h2`

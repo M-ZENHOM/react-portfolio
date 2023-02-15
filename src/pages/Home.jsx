@@ -15,7 +15,9 @@ const Section = styled(motion.section)`
   align-content: center;
   flex-wrap: wrap;
   overflow: hidden;
-  padding-bottom: 15px;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 20px;
+  }
 `;
 const TextBox = styled.div`
   display: flex;
@@ -41,10 +43,11 @@ const TextBox = styled.div`
       font-size: 20px;
     }
   }
+
   @media (max-width: 450px) {
     span {
       width: auto;
-      font-size: 18px;
+      font-size: 16px;
     }
   }
 `;
@@ -53,7 +56,7 @@ const ImgLogo = styled.img`
   @media (max-width: 991px) {
     width: 300px;
   }
-  @media (max-width: 414px) {
+  @media (max-width: 768px) {
     width: 250px;
   }
 `;
@@ -65,8 +68,8 @@ const MainImg = styled.img`
   @media (max-width: 991px) {
     order: 1;
   }
-  @media (max-width: 414px) {
-    width: 360px;
+  @media (max-width: 768px) {
+    width: 300px;
   }
 `;
 const floatX = keyframes`
@@ -105,7 +108,7 @@ export const Home = () => {
           <ImgLogo src={myName} alt="Mahmoud M Zenhom" />
           <Typewriter
             words={[
-              "A passionate Front End Developer 🚀 having an experience of building Web with JavaScript / Reactjs / Redux/toolkit and some other cool libraries and frameworks.",
+              "A passionate Front End Developer having an experience of building Web with JavaScript / Reactjs / Redux/toolkit and some other cool libraries and frameworks.",
             ]}
             typeSpeed={20}
           />
