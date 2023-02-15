@@ -1,6 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Mousewheel, EffectCoverflow, Navigation } from "swiper";
+import {
+  Pagination,
+  Mousewheel,
+  EffectCoverflow,
+  Navigation,
+  Autoplay,
+} from "swiper";
 import { motion as m } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -67,12 +73,22 @@ export const Projects = () => {
       <Wrapper>
         <Swiper
           effect={"coverflow"}
-          modules={[Navigation, Pagination, Mousewheel, EffectCoverflow]}
+          modules={[
+            Navigation,
+            Pagination,
+            Mousewheel,
+            EffectCoverflow,
+            Autoplay,
+          ]}
           slidesPerView={1}
           spaceBetween={30}
           mousewheel={true}
           navigation={true}
           pagination={{ clickable: true }}
+          autoplay={{
+            delay: 1500,
+            disableOnInteraction: false,
+          }}
           coverflowEffect={{
             rotate: 50,
             stretch: 0,
