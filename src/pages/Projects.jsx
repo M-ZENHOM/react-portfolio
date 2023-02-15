@@ -86,7 +86,7 @@ export const Projects = () => {
           navigation={true}
           pagination={{ clickable: true }}
           autoplay={{
-            delay: 1500,
+            delay: 2500,
             disableOnInteraction: false,
           }}
           coverflowEffect={{
