@@ -15,8 +15,8 @@ const Box = styled.div`
 const Title = styled.h2`
   font-size: 26px;
   color: ${({ theme }) => theme.colors.heading};
-  #light & {
-    color: ${({ theme }) => theme.colors.lightTwo};
+  @media (max-width: 768px) {
+    width: 250px;
   }
 `;
 
@@ -36,11 +36,11 @@ const Tags = styled.div`
   display: flex;
   flex-wrap: wrap;
   color: ${({ theme }) => theme.colors.text};
-  width: 400px;
+  width: 300px;
   @media screen and (max-width: 768px) {
     font-size: 16px;
     text-align: center;
-    width: auto;
+    width: calc(auto - 10px);
   }
 `;
 const Footer = styled.footer`
@@ -52,6 +52,9 @@ const Footer = styled.footer`
 `;
 const ImgHolder = styled.img`
   width: 900px;
+  @media (max-width: 1170px) {
+    width: 600px;
+  }
   @media (max-width: 1024px) {
     width: 550px;
   }

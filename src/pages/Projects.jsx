@@ -1,12 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Pagination,
-  Mousewheel,
-  EffectCoverflow,
-  Navigation,
-  Autoplay,
-} from "swiper";
+import { Pagination, Mousewheel, Navigation, Autoplay } from "swiper";
 import { motion as m } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -32,7 +26,7 @@ const Wrapper = styled.div`
   align-items: center;
   height: 100%;
   .swiper {
-    width: 90%;
+    width: 100%;
     height: 600px;
     border-radius: 30px;
     transition: 0.7s;
@@ -45,7 +39,7 @@ const Wrapper = styled.div`
       width: 12px;
       height: 12px;
       @media (max-width: 640px) {
-        margin-bottom: 50px;
+        margin-top: 70px;
       }
     }
     .swiper-button-next,
@@ -72,14 +66,7 @@ export const Projects = () => {
     >
       <Wrapper>
         <Swiper
-          effect={"coverflow"}
-          modules={[
-            Navigation,
-            Pagination,
-            Mousewheel,
-            EffectCoverflow,
-            Autoplay,
-          ]}
+          modules={[Navigation, Pagination, Mousewheel, Autoplay]}
           slidesPerView={1}
           spaceBetween={30}
           mousewheel={true}
@@ -88,13 +75,7 @@ export const Projects = () => {
           autoplay={{
             delay: 5000,
             disableOnInteraction: false,
-          }}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 2,
-            slideShadows: true,
+            pauseOnMouseEnter: true,
           }}
         >
           {ProData.map((d) => (
