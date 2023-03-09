@@ -4,6 +4,9 @@ import styled from "styled-components";
 import photoshopIcon from "../assets/images/photoshop.png";
 import tailWindIcon from "../assets/SVG/tailwind-css.svg";
 import styeldIcon from "../assets/SVG/styled-components.svg";
+import NextJsLogo from "../assets/SVG/nextjs-logo.svg";
+import GatsbyLogo from "../assets/SVG/gatsbyjs-icon.svg";
+// import Firebaselogo from "../assets/SVG/firebase-icon.svg";
 import {
   FaReact,
   FaSass,
@@ -11,6 +14,8 @@ import {
   FaHtml5,
   FaGitAlt,
   FaBootstrap,
+  FaGithub,
+  FaFigma,
 } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
 import { FaCss3Alt } from "react-icons/fa";
@@ -168,9 +173,17 @@ export const Skills = () => {
             <FaJsSquare />
             JS
           </Icon>
+          <Icon dealy="0.3" color="#6ad3d1">
+            <img src={NextJsLogo} alt="NextJsLogo" />
+            Next.js
+          </Icon>
           <Icon dealy="0.3" color="#7046b2">
             <SiRedux />
             Redux
+          </Icon>
+          <Icon dealy="0.3" color="#663399">
+            <img src={GatsbyLogo} alt="GatsbyLogo" />
+            Gatsby
           </Icon>
           <Icon dealy="0.4" color="#e56027">
             <FaHtml5 />
@@ -200,6 +213,18 @@ export const Skills = () => {
             <FaCss3Alt />
             CSS3
           </Icon>
+          <Icon dealy="0.4" color="#252525">
+            <FaGithub />
+            Github
+          </Icon>
+          <Icon dealy="0.4" color="#f76e5f">
+            <FaFigma />
+            Figma
+          </Icon>
+          {/* <Icon dealy="0.4" color="#ffc92896">
+            <img src={Firebaselogo} alt="Firebaselogo" />
+            Firebase
+          </Icon> */}
         </IconWrapper>
       </Section>
     </ResponsiveContainer>
