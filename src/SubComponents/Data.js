@@ -30,11 +30,20 @@ export const ProData = [
   {
     id: 4,
     name: "Old react context e-commerce",
-    tech: " React/js / Context api / Scss / Framer Motion",
+    tech: " React JS / Context api / Scss / Framer Motion",
     description:
       "An old react context e-commerce with a cart from fake API, I made it when I was learning react 5 months ago.",
     img: "https://i.postimg.cc/tJ4pvBgS/MadStore.png",
     code: "https://github.com/M-ZENHOM/OLD_REACT_ECOMMERCE",
     demo: "https://old-react-ecommerce.vercel.app/",
+  },
+  {
+    id: 5,
+    name: "Sport Academy",
+    tech: " Vite / Tailwind / Framer Motion",
+    description: "Simple sport academy",
+    img: "https://i.postimg.cc/bwZ2QdDT/SportImg.png",
+    code: "https://github.com/M-ZENHOM/sport-academy",
+    demo: "https://sport-academy-two.vercel.app/",
   },
 ];
