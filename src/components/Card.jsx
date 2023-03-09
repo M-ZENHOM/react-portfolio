@@ -32,7 +32,7 @@ const Description = styled.h2`
   }
 `;
 const Tags = styled.div`
-  padding-top:555rem;
+  padding-top: 555rem;
   display: flex;
   flex-wrap: wrap;
   color: ${({ theme }) => theme.colors.text};
