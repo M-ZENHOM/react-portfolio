@@ -51,7 +51,7 @@ export const ProData = [
     name: "Weather App",
     tech: " JS / SCSS / REST API",
     description: "Weather app with bg changing with ur country.[AR/EN]",
-    img: "https://drive.google.com/file/d/1gwjAd-NDaccti3EV1i-a8w2O8NehVbjD/view?usp=sharing",
+    img: "../assets/images/Weatherimg.png",
     code: "https://github.com/M-ZENHOM/Weather-App",
     demo: "https://m-zenhom.github.io/Weather-App/",
   },
