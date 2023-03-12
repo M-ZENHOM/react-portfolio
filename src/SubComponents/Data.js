@@ -46,4 +46,13 @@ export const ProData = [
     code: "https://github.com/M-ZENHOM/sport-academy",
     demo: "https://sport-academy-two.vercel.app/",
   },
+  {
+    id: 6,
+    name: "Weather App",
+    tech: " JS / SCSS / REST API",
+    description: "Weather app with bg changing with ur country.[AR/EN]",
+    img: "https://i.postimg.cc/g08RmzBN/Weatherimg.png",
+    code: "https://github.com/M-ZENHOM/Weather-App",
+    demo: "https://m-zenhom.github.io/Weather-App/",
+  },
 ];
