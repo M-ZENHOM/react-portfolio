@@ -1,4 +1,9 @@
-import WeatherImg from "../assets/images/Weatherimg.png";
+import WeatherImg from "../assets/ProjectsImg/Weatherimg.png";
+import SportImg from "../assets/ProjectsImg/SportImg.png";
+import MoiveImg from "../assets/ProjectsImg/MovieImg.png";
+import MadImg from "../assets/ProjectsImg/MadStore.png";
+import TodoImg from "../assets/ProjectsImg/TodoList.png";
+import EComereceImg from "../assets/ProjectsImg/CommerceApp.png";
 export const ProData = [
   {
     id: 1,
@@ -6,7 +11,7 @@ export const ProData = [
     tech: "React JS - Redux/Toolkit - Mui",
     description:
       "A Simple Movie Application using React JS, Styled-component ,allows the user to search and filter movies they want from the MovieDB API",
-    img: "https://i.postimg.cc/C139rC7y/MovieImg.png",
+    img: MoiveImg,
     code: "https://github.com/M-ZENHOM/REACT_MOIVE_APP",
     demo: "https://react-moive-app-delta.vercel.app/",
   },
@@ -15,7 +20,7 @@ export const ProData = [
     name: "Commerce App",
     tech: "React JS - Styled-Components - Redux/Toolkit - Bootstrap",
     description: "A simple commerce app with cart and check out with fake api",
-    img: "https://i.postimg.cc/nVdH2NbB/Commerce-App.png",
+    img: EComereceImg,
     code: "https://github.com/M-ZENHOM/Simple-Commerce-App-",
     demo: "https://simple-commerce-app.vercel.app/",
   },
@@ -24,7 +29,7 @@ export const ProData = [
     name: "Todo Lists App",
     tech: "React JS - Redux/Toolkit - Styled-Components",
     description: "A smiple todo lists app  with redux/toolkit",
-    img: "https://i.postimg.cc/5NFZzrxx/TodoList.png",
+    img: TodoImg,
     code: "https://github.com/M-ZENHOM/To-Do-Lists-with-redux-toolkit",
     demo: "https://to-do-lists-with-redux-toolkit.vercel.app/",
   },
@@ -34,7 +39,7 @@ export const ProData = [
     tech: " React JS / Context api / Scss / Framer Motion",
     description:
       "An old react context e-commerce with a cart from fake API, I made it when I was learning react 5 months ago.",
-    img: "https://i.postimg.cc/tJ4pvBgS/MadStore.png",
+    img: MadImg,
     code: "https://github.com/M-ZENHOM/OLD_REACT_ECOMMERCE",
     demo: "https://old-react-ecommerce.vercel.app/",
   },
@@ -43,7 +48,7 @@ export const ProData = [
     name: "Sport Academy",
     tech: " Vite / Tailwind / Framer Motion",
     description: "Simple sport academy",
-    img: "https://i.postimg.cc/bwZ2QdDT/SportImg.png",
+    img: SportImg,
     code: "https://github.com/M-ZENHOM/sport-academy",
     demo: "https://sport-academy-two.vercel.app/",
   },
