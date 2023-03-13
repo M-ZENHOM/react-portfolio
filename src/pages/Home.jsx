@@ -105,7 +105,12 @@ export const Home = () => {
       >
         <TextBox>
           <span>Hi, my name is</span>
-          <ImgLogo src={myName} alt="Mahmoud M Zenhom" />
+          <ImgLogo
+            src={myName}
+            alt="Mahmoud M Zenhom"
+            width="auto"
+            height="auto"
+          />
           <Typewriter
             words={[
               "A passionate Front End Developer having an experience of building Web with JavaScript / Reactjs / Redux/toolkit and some other cool libraries and frameworks.",
@@ -113,9 +118,9 @@ export const Home = () => {
             typeSpeed={20}
           />
         </TextBox>
-        <MainImg src={myImg} alt="Zenhom Img" />
+        <MainImg src={myImg} alt="Zenhom Img" width="auto" height="auto" />
       </Section>
-      <Pattern src={pattern} alt="Pattern" />
+      <Pattern src={pattern} alt="Pattern" width="auto" height="auto" />
     </ResponsiveContainer>
   );
 };
