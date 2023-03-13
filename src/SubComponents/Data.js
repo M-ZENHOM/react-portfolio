@@ -1,3 +1,4 @@
+import WeatherImg from "../assets/images/Weatherimg.png";
 export const ProData = [
   {
     id: 1,
@@ -51,7 +52,7 @@ export const ProData = [
     name: "Weather App",
     tech: " JS / SCSS / REST API",
     description: "Weather app with bg changing with ur country.[AR/EN]",
-    img: "../assets/images/Weatherimg.png",
+    img: { WeatherImg },
     code: "https://github.com/M-ZENHOM/Weather-App",
     demo: "https://m-zenhom.github.io/Weather-App/",
   },
